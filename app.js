@@ -18,7 +18,11 @@ Ext.application({
     ],
 
     views: [
-        'Main', 'Deals'
+        'Main', 'Deals', 'Settings', 'Contact'
+    ],
+
+    controllers: [
+        'DealSpot.controller.Main'
     ],
 
     icon: {

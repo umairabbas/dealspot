@@ -2,40 +2,38 @@ Ext.define('DealSpot.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
+        'Ext.TitleBar'
     ],
     config: {
         tabBarPosition: 'bottom',
-
         items: [
             {
                 title: 'Map',
-                iconCls: 'home',
+                iconCls: 'maps',
                 styleHtmlContent: true,
                 scrollable: true,
                 xtype: 'deals'
             },
             {
                 title: 'Deals',
-                iconCls: 'action',
+                iconCls: 'star',
                 styleHtmlContent: true,
                 scrollable: true,
                 xtype: 'deals'
             },
             {
                 title: 'Settings',
-                iconCls: 'home',
+                iconCls: 'settings',
                 styleHtmlContent: true,
                 scrollable: true,
-                xtype: 'deals'
+                xtype: 'settings'
             },
             {
                 title: 'Contact',
-                iconCls: 'action',
+                iconCls: 'user',
                 styleHtmlContent: true,
                 scrollable: true,
-                xtype: 'deals'
+                xtype: 'contact'
             }
         ]
     }
