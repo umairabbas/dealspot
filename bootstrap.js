@@ -36,6 +36,7 @@ Ext.Loader.addClassPathMappings({
 });
 
 Ext.ClassManager.addNameAlternateMappings({
+  "DealSpot.view.Deals": [],
   "DealSpot.view.Main": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
@@ -672,6 +673,9 @@ Ext.ClassManager.addNameAlternateMappings({
 });
 
 Ext.ClassManager.addNameAliasMappings({
+  "DealSpot.view.Deals": [
+    "widget.deals"
+  ],
   "DealSpot.view.Main": [
     "widget.main"
   ],

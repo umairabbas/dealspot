@@ -4,6 +4,7 @@
 $body-bg-color: #f1f1f1;
 $base-color: #e7e7e7;
 $base-gradient: 'flat';
+$redShade: #F44336;
 $font-family: "globersemibold_free", sans-serif !default;
 
 @import 'sencha-touch/default';
@@ -134,6 +135,7 @@ a{color:#535353;text-decoration: none;}
 }
 .propelLogo{width:6em; height: 1.8em;}
 
+
 .x-toolbar-dark .x-button{
   background-image: none;
   background-color: transparent;
@@ -148,12 +150,12 @@ a{color:#535353;text-decoration: none;}
 .x-button.x-button-pressing{background-image: none; background: transparent;}
 .x-tabbar.x-docked-top, .x-layout-card-item{background:#f1f1f1;}
 .x-button.x-button-pressed {
-  background: #66af3f;
+  background: $redShade;
   color: #fff;
   box-shadow: inset 0em 0em 0em #005766;
   border: 0px;
   padding: 0.8em;
-  border: 1px solid #66af3f;
+  border: 1px solid $redShade;
   font-size: 0.9em;
   width: 50%;
 }
@@ -164,13 +166,13 @@ a{color:#535353;text-decoration: none;}
   font-size: 0.9em;
   padding: 0.8em;
   width: 50%;
-  border:1px solid #66af3f;
+  border:1px solid $redShade;
 }
 
 
 
 
-.bubble{border:1px solid #66af3f;}
+.bubble{border:1px solid $redShade;}
   /*- bottom tab bar -*/
 .x-tabbar-dark.x-docked-bottom .x-tab-active{
   background-image: none;
@@ -179,10 +181,10 @@ a{color:#535353;text-decoration: none;}
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  color: #66af3f;}
+  color: $redShade;}
 
 .x-tabbar-dark.x-docked-bottom .x-tab-active .x-button-icon:before{
-  color: #66af3f;
+  color: $redShade;
 }
 .x-tabbar.x-docked-bottom .x-tab .x-button-label, .x-tabbar.x-docked-bottom .x-tab .x-badge{text-transform: uppercase;}
 .x-tabbar.x-docked-bottom .x-tab{width:24%;}
