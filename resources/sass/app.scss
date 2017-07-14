@@ -1,0 +1,243 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+$body-bg-color: #f1f1f1;
+$base-color: #e7e7e7;
+$base-gradient: 'flat';
+$font-family: "globersemibold_free", sans-serif !default;
+
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
+
+@include icon-font('globersemibold_free', inline-font-files(
+                'glober/globersemibold-webfont.woff', woff,
+                'glober/globersemibold-webfont.ttf', truetype,
+                'glober/globersemibold-webfont.svg', svg
+));
+
+@include icon-font('icomoon', inline-font-files(
+                'icomoon/icomoon.woff', woff,
+                'icomoon/icomoon.ttf', truetype,
+                'icomoon/icomoon.svg', svg
+));
+
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+html, body {
+  background: url("../startup/splash.png"), linear-gradient(to bottom, #f4f4f4 0%, #e7e7e7 100%)!important; background-size:100%!important; background-repeat: no-repeat;
+  background-color: #f4f4f4;
+}
+
+.splash{
+  background: url("../startup/splash.png"), linear-gradient(to bottom, #f4f4f4 0%, #e7e7e7 100%)!important; background-size:100%!important; background-repeat: no-repeat;
+  height:100%;
+}
+
+.animate {
+  /* Webkit for Chrome and Safari */
+  -webkit-transform: scale(3, 3) translate(0px, 100px);
+  -webkit-transition-duration: 2s;
+  -webkit-transition-timing-function: ease-out;
+
+  /* Webkit for Mozila Firefox */
+  -moz-transform: scale(3, 3) translate(0px, 100px);
+  -moz-transition-duration: 2s;
+  -moz-transition-timing-function: ease-out;
+
+  /* Webkit for IE( Version: 11, 10 ) */
+  -ms-transform: scale(3, 3) translate(0px, 100px);
+  -ms-transition-duration: 2s;
+  -ms-transition-timing-function: ease-out;
+}
+/* scrollar */
+.x-scroll-indicator {
+  opacity: 0.5 !important;
+  width:2px;
+  padding-left: 2px;
+  border-radius:1em;
+}
+
+/*.x-navigation-bar.x-docked-top, .x-navigation-bar.x-docked-top, .screen-top.x-docked-top*/
+.padding-top{
+  padding-top: 20px !important;
+}
+#appLoadingIndicator{display:none;}
+/* loading */
+.x-mask .x-mask-inner {
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  padding: .4em;
+  font-size: .95em;
+  font-weight: bold;
+  border-radius: 0.5em;
+}
+.x-mask.x-has-message .x-loading-spinner-outer{height: 50px;}
+.x-mask .x-mask-inner{font-size: .65em;}
+
+
+a{color:#535353;text-decoration: none;}
+@font-face {
+  font-family: 'globersemibold_free';
+  src: url('stylesheets/fonts/glober/globersemibold-webfont.eot');
+  src: url('stylesheets/fonts/glober/globersemibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('stylesheets/fonts/glober/globersemibold-webfont.woff') format('woff'),
+  url('stylesheets/fonts/glober/globersemibold-webfont.ttf') format('truetype'),
+  url('stylesheets/fonts/glober/globersemibold-webfont.svg#globersemibold_free') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* -- top bar / title -- */
+.x-toolbar-dark {
+  background-image: -webkit-gradient(
+                  linear,
+                  left top,
+                  left bottom,
+                  color-stop(0, #E7E7E7),
+                  color-stop(1, #F4F4F4)
+  );
+  background-image: -o-linear-gradient(top, #E7E7E7 0%, #F4F4F4 100%);
+  background-image: -moz-linear-gradient(top, #E7E7E7 0%, #F4F4F4 100%);
+  background-image: -webkit-linear-gradient(top, #E7E7E7 0%, #F4F4F4 100%);
+  background-image: -ms-linear-gradient(top, #E7E7E7 0%, #F4F4F4 100%);
+  background-image: linear-gradient(to top, #E7E7E7 0%, #F4F4F4 100%);
+  background-color: transparent;
+  border-color: #c8c8c8;
+
+}
+.x-toolbar-dark.x-docked-top {
+  border-bottom-color: #c8c8c8;
+}
+
+.x-tabbar-dark.x-docked-top .x-tab-active {
+  background-image: none;
+  background-color: #393939;
+  color: #fff;
+}
+.x-tabbar.x-docked-top .x-tab {
+  border-radius: 0.3em;
+  }
+.topbar{
+  .x-innerhtml{text-indent:-999em; background: url("../images/logo.png") no-repeat center; background-size: 70%;width:5em;}
+}
+.propelLogo{width:6em; height: 1.8em;}
+
+.x-toolbar-dark .x-button{
+  background-image: none;
+  background-color: transparent;
+  border: 0;color:#393939;padding: 0.3em;}
+.x-toolbar-dark .x-button.x-button-pressing{background:transparent;}
+.txtbtn{padding: .7em 0.3em 0 !important;}
+/* tab bar */
+.x-segmentedbutton{padding: 0.5em 0.7em;
+
+  .x-button-label{line-height: .9em;}
+}
+.x-button.x-button-pressing{background-image: none; background: transparent;}
+.x-tabbar.x-docked-top, .x-layout-card-item{background:#f1f1f1;}
+.x-button.x-button-pressed {
+  background: #66af3f;
+  color: #fff;
+  box-shadow: inset 0em 0em 0em #005766;
+  border: 0px;
+  padding: 0.8em;
+  border: 1px solid #66af3f;
+  font-size: 0.9em;
+  width: 50%;
+}
+.x-last, .x-first {
+  background: transparent;
+  color: #707070;
+  border: 0px;
+  font-size: 0.9em;
+  padding: 0.8em;
+  width: 50%;
+  border:1px solid #66af3f;
+}
+
+
+
+
+.bubble{border:1px solid #66af3f;}
+  /*- bottom tab bar -*/
+.x-tabbar-dark.x-docked-bottom .x-tab-active{
+  background-image: none;
+  background-color: transparent;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #66af3f;}
+
+.x-tabbar-dark.x-docked-bottom .x-tab-active .x-button-icon:before{
+  color: #66af3f;
+}
+.x-tabbar.x-docked-bottom .x-tab .x-button-label, .x-tabbar.x-docked-bottom .x-tab .x-badge{text-transform: uppercase;}
+.x-tabbar.x-docked-bottom .x-tab{width:24%;}
+
+.x-tabbar-dark .x-tab {
+  color: #393939;
+  border-bottom: 1px solid transparent;
+}
+.x-tabbar-dark {
+  border-top-color: #a7a7a7;
+  border-bottom-color: transparent;
+  background-image: none;
+  background-color: #fff;
+}
+/*
+.x-tabbar.x-docked-bottom .x-tab .x-button-icon {
+  width: 1.87em;
+}*/
+.x-panel, .x-msgbox {
+  position: relative;
+  font-size: .9em;
+}
+.x-tabbar-inner{
+  div:nth-child(3){
+    span:nth-child(2){width:2em !important;}
+  }
+}
+.icon-bulleted-menu:before {
+  font-size: 1.1em !important;
+}
+.icon-close-icon:before {
+  font-size: .85em !important;
+}
+/* Icons fonts */
+@font-face {
+  font-family: 'icomoon';
+  src:url('stylesheets/fonts/icomoon/icomoon.eot?-j09yd0');
+  src:url('stylesheets/fonts/icomoon/icomoon.eot?#iefix-j09yd0') format('embedded-opentype'),
+  url('stylesheets/fonts/icomoon/icomoon.woff?-j09yd0') format('woff'),
+  url('stylesheets/fonts/icomoon/icomoon.ttf?-j09yd0') format('truetype'),
+  url('stylesheets/fonts/icomoon/icomoon.svg?-j09yd0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
