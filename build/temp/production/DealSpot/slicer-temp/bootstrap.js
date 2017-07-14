@@ -1907,8 +1907,16 @@ Ext.Loader.addClassPathMappings({
 });
 
 Ext.ClassManager.addNameAlternateMappings({
+  "DealSpot.common.Util": [],
+  "DealSpot.controller.Main": [],
+  "DealSpot.model.Categories": [],
+  "DealSpot.store.Categories": [],
+  "DealSpot.view.Categories": [],
+  "DealSpot.view.Contact": [],
   "DealSpot.view.Deals": [],
   "DealSpot.view.Main": [],
+  "DealSpot.view.Nearby": [],
+  "DealSpot.view.Settings": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -2533,11 +2541,27 @@ Ext.ClassManager.addNameAlternateMappings({
 });
 
 Ext.ClassManager.addNameAliasMappings({
+  "DealSpot.common.Util": [],
+  "DealSpot.controller.Main": [],
+  "DealSpot.model.Categories": [],
+  "DealSpot.store.Categories": [],
+  "DealSpot.view.Categories": [
+    "widget.categories"
+  ],
+  "DealSpot.view.Contact": [
+    "widget.contact"
+  ],
   "DealSpot.view.Deals": [
     "widget.deals"
   ],
   "DealSpot.view.Main": [
     "widget.main"
+  ],
+  "DealSpot.view.Nearby": [
+    "widget.nearby"
+  ],
+  "DealSpot.view.Settings": [
+    "widget.settings"
   ],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],

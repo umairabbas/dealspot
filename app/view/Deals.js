@@ -2,7 +2,7 @@ Ext.define('DealSpot.view.Deals', {
     extend: 'Ext.Container',
     xtype: 'deals',
     config : {
-        layout: 'fit',
+        layout: 'vbox',
         items: [{
             xtype: 'titlebar',
             docked: 'top',
@@ -11,12 +11,28 @@ Ext.define('DealSpot.view.Deals', {
 
             items:[{
                 xtype: 'button',
-                cls:'txtbtn',
-                text: 'En Español',
-                align: 'right',
-                action: 'espanolPressed',
-                value: 'es'
+                iconCls:'refresh',
+                align: 'right'
             }]
+        },
+        {
+            xtype: 'segmentedbutton',
+            allowMultiple: false,
+            id: 'dealTabs',
+            items: [{
+                text: 'Near By',
+                pressed: true
+
+            },{
+                text: 'Categories'
+            }]
+        },
+        {
+            xtype: 'panel',
+            flex: 1,
+            layout: 'card',
+            items:[{xtype: 'nearby', active: true},{xtype: 'categories'}],
+            id: 'dealsInfoContainer'
         }
         ]
     }

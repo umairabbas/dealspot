@@ -18,8 +18,13 @@ Ext.application({
     ],
 
     views: [
-        'Main', 'Deals', 'Settings', 'Contact'
+        'Main', 'Deals', 'Settings', 'Contact', 'Categories', 'Nearby'
     ],
+
+
+    models : ['Categories'],
+
+    stores : ['Categories'],
 
     controllers: [
         'DealSpot.controller.Main'

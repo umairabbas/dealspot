@@ -10,21 +10,19 @@ Ext.define('DealSpot.view.Main', {
             {
                 title: 'Map',
                 iconCls: 'maps',
-                styleHtmlContent: true,
-                scrollable: true,
-                xtype: 'deals'
+                xtype: 'settings'
             },
             {
                 title: 'Deals',
                 iconCls: 'star',
-                styleHtmlContent: true,
-                scrollable: true,
-                xtype: 'deals'
+                scrollable: false,
+                xtype: 'deals',
+                pressed: true,
+                active: true
             },
             {
                 title: 'Settings',
                 iconCls: 'settings',
-                styleHtmlContent: true,
                 scrollable: true,
                 xtype: 'settings'
             },
