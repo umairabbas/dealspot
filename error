@@ -1,31 +1,8 @@
 Sencha Cmd v6.5.0.180
-[INF] Processing Build Descriptor : default (production environment)
-[INF] Loading compiler context
-[INF] Loading app json manifest...
-[INF] Writing output to file C:\xampp\htdocs\SenchaApp/build/temp/production/DealSpot/sencha-compiler/cmd-packages.js
-[WRN] C1014: callParent has no target (me.callParent in Ext.dataview.DataView.onAfterRender) -- C:\xampp\htdocs\SenchaApp\touch\src\dataview\DataView.js:893:29081
-[WRN] C1014: callParent has no target (this.callParent in Ext.Decorator.setDisabled) -- C:\xampp\htdocs\SenchaApp\touch\src\Decorator.js:157:5230
-[WRN] C1014: callParent has no target (this.callParent in Ext.data.ArrayStore.loadData) -- C:\xampp\htdocs\SenchaApp\touch\src\data\ArrayStore.js:69:2270
-[WRN] C1014: callParent has no target (this.callParent in Ext.fx.animation.Wipe.getData) -- C:\xampp\htdocs\SenchaApp\touch\src\fx\animation\Wipe.js:119:4252
-[INF] Writing concatenated output to file C:\xampp\htdocs\SenchaApp\build\production\DealSpot\app.js
-[INF] merging 0 input resources into C:\xampp\htdocs\SenchaApp\build\production\DealSpot\resources
-[INF] merged 0 resources into C:\xampp\htdocs\SenchaApp\build\production\DealSpot\resources
-[INF] merging 21 input resources into C:\xampp\htdocs\SenchaApp\build\production\DealSpot
-[INF] merged 0 resources into C:\xampp\htdocs\SenchaApp\build\production\DealSpot
-[INF] writing content to C:\xampp\htdocs\SenchaApp\build\temp\production\DealSpot\slicer-temp\bootstrap.js
-[INF] appending content to C:\xampp\htdocs\SenchaApp\build\temp\production\DealSpot\slicer-temp\bootstrap.js
-[INF] appending content to C:\xampp\htdocs\SenchaApp\build\temp\production\DealSpot\slicer-temp\bootstrap.js
-[INF] appending content to C:\xampp\htdocs\SenchaApp\build\temp\production\DealSpot\slicer-temp\bootstrap.js
-[INF] appending content to C:\xampp\htdocs\SenchaApp\build\temp\production\DealSpot\slicer-temp\bootstrap.js
-[INF] executing compass using system installed ruby runtime
-[ERR] 
-[ERR] BUILD FAILED
-[ERR] com.sencha.exceptions.ExProcess: Failed creating background process
-[ERR] 	at java.lang.ProcessImpl.start(U
-[ERR] nknown Source)
-[ERR] 
-[ERR] Total time: 8 seconds
+[INF] Creating App
+[INF] [shellscript] 
+[INF] [shellscript] C:\xampp\htdocs\SenchaApp>cordova create "C:\xampp\htdocs\SenchaApp/cordova" de.deal-spot.www DealSpot 
+[INF] [shellscript] Error: App id contains a reserved word, or is not a valid identifier.
 [ERR] The following error occurred while executing this line:
-C:\xampp\htdocs\SenchaApp\.sencha\app\build-impl.xml:291: The following error occurred while executing this line:
-C:\xampp\htdocs\SenchaApp\.sencha\app\sass-impl.xml:373: The following error occurred while executing this line:
-C:\xampp\htdocs\SenchaApp\.sencha\app\sass-impl.xml:379: com.sencha.exceptions.ExProcess: Failed creating background process
+C:\Users\Umi\bin\Sencha\Cmd\6.5.0.180\extensions\cmd-packager\cmd-packager.plugin.xml:107: The following error occurred while executing this line:
+jar:file:/C:/Users/Umi/bin/Sencha/Cmd/6.5.0.180/sencha.jar!/com/sencha/ant/antlib.xml:670: shellscript returned: 1

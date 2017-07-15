@@ -1,4 +1,21 @@
 {
+    "builds": {
+        "web": {"default": true},
+        "native": {
+            "packager": "cordova",
+            "cordova" : {
+                "config": {
+                    // Uncomment the line below and add the platforms you wish to build for
+                    //"platforms": "ios android",
+                    "platforms": "android",
+                    "id": "de.dealsspot.www",
+                    "name": "DealSpot"
+                }
+            }
+        }
+    },
+
+                
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */
@@ -18,6 +35,18 @@
         "app",
         "app.js"
     ],
+
+    // "builds": { "native": {
+    //             "packager": "cordova",
+    //             "cordova" : {
+    //                 "config": {
+    //                 "platforms": "android",
+    //                 "id": "de.www.deal-spot"
+    //                 }
+    //             }
+    //         }
+    // },
+
 
     /**
      * The absolute URL to this application in development environment, i.e: the URL to run this application

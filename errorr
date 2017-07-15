@@ -1,0 +1,8 @@
+Sencha Cmd v6.5.0.180
+[INF] Creating App
+[INF] [shellscript] 
+[INF] [shellscript] C:\xampp\htdocs\SenchaApp>cordova create "C:\xampp\htdocs\SenchaApp/cordova" de.dealsspot.www DealSpot 
+[INF] [shellscript] Creating a new cordova project.
+[INF] Adding native build to app.json
+[INF] Application has been initialized for native packaging. Please edit app.json and add platform(s) to build for.
+
