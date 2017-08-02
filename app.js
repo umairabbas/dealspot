@@ -14,17 +14,17 @@ Ext.application({
     name: 'DealSpot',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox', 'DealSpot.common.Util', 'DealSpot.common.CountryList'
     ],
 
     views: [
-        'Main', 'Deals', 'Settings', 'Contact', 'Categories', 'Nearby'
+        'Main', 'Deals', 'Settings', 'Contact', 'Categories', 'Nearby', 'Startup'
     ],
 
 
-    models : ['Categories'],
+    models : ['Categories', 'UserProfile'],
 
-    stores : ['Categories'],
+    stores : ['Categories', 'UserProfile'],
 
     controllers: [
         'DealSpot.controller.Main'
@@ -88,8 +88,13 @@ Ext.application({
         //             ]
         //         });
 
-        // Initialize the main view
-        Ext.Viewport.add(Ext.create('DealSpot.view.Main'));
+        if(DealSpot.common.Util.checkUserState()){
+            // Initialize the main view
+            Ext.Viewport.add(Ext.create('DealSpot.view.Main'));
+        }else{
+            // Initialize the login view
+            Ext.Viewport.add(Ext.create('DealSpot.view.Startup'));
+        }
 
         Ext.Viewport.setMasked({
             message: "Loading...",
@@ -100,6 +105,9 @@ Ext.application({
             // Unmask the container
             Ext.Viewport.setMasked(false);
         }, 1000);
+
+
+
 
         var os = Ext.os.name;
 

@@ -8,7 +8,6 @@ Ext.define('DealSpot.view.Deals', {
             docked: 'top',
             cls:'topbar',
             title:'Sample',
-
             items:[{
                 xtype: 'button',
                 iconCls:'refresh',

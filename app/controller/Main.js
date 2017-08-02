@@ -3,7 +3,9 @@ Ext.define('DealSpot.controller.Main', {
 	config : {
 		refs : {
 			main: 'main',
-			deals: 'deals'
+			deals: 'deals',
+			Startup: 'startup',
+			startupSave: 'startup #startupSaveBtn',
 		},
 		control : {
 			main: {
@@ -15,6 +17,9 @@ Ext.define('DealSpot.controller.Main', {
 			'deals #dealsInfoContainer': {
                 activeitemchange: 'onDealsItemChange'
             },
+            startupSave:{
+				tap:'onStartupSave'
+			},
 		}
 	},
 	onInitialize: function() {
@@ -67,6 +72,44 @@ Ext.define('DealSpot.controller.Main', {
         	console.log('Cat active');
             currentView.setActiveItem(1);
         }
+    },
+    onStartupSave: function(){
+    	console.log('DealSpot.controller.Main.onStartupSave();');
+    	var me = this,
+            now = Date.now();
+        //Restrict multiple taps
+        if (now < me.lastTapTimestamp + DealSpot.common.Util.clickDelay) {
+            me.lastTapTimestamp = now;
+            return;
+        }
+        me.lastTapTimestamp = now;
+
+        var startupForm = Ext.getCmp('startupForm');
+
+		var data = startupForm.getValues();
+
+		if(data.language == ""){
+			DealSpot.common.Util.Alert('', "Please fill language field.");
+			return;
+		}
+
+		if(data.country == ""){
+			DealSpot.common.Util.Alert('', "Please fill country field.");
+			return;
+		}
+
+		var store = Ext.getStore('userProfileStore');
+		var data = [{"uid": "24", "name": data.name, "language": data.language, "country": data.country, "zip": data.zip}];
+			store.add(data);
+			store.sync();
+
+		// add main view
+		var view = Ext.Viewport.add({xtype: 'main'});
+		view.show();
+
+		// remove login view - clear memory
+		var startupView = Ext.ComponentQuery.query('startup')[0];
+	                startupView.destroy();
     }
 
 });

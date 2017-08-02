@@ -4,7 +4,7 @@
 $body-bg-color: #f1f1f1;
 $base-color: #e7e7e7;
 $base-gradient: 'flat';
-$redShade: #F44336;
+$redShade: #B42933;
 $font-family: "globersemibold_free", sans-serif !default;
 
 @import 'sencha-touch/default';
@@ -75,7 +75,7 @@ html, body {
 /* loading */
 .x-mask .x-mask-inner {
   position: relative;
-  background: #fff;
+  background: lightgrey;
   color: #fff;
   text-align: center;
   padding: .4em;
@@ -163,10 +163,10 @@ a{color:#535353;text-decoration: none;}
   background: transparent;
   color: #707070;
   border: 0px;
-  font-size: 0.9em;
+  font-size: 1.1em;
   padding: 0.8em;
   width: 50%;
-  border:2px solid $redShade;
+  border:0px solid $redShade;
 }
 
 
@@ -176,7 +176,7 @@ a{color:#535353;text-decoration: none;}
   padding:.1em 1em;
   font-size: .9em;
   line-height: 1.4em;
-  h1{color:redShade;padding:0.2em 0;font-size: 1.1em;}
+  h1{color:$redShade;padding:0.2em 0;font-size: 1.1em;}
   div, p{color:#535353; padding:0.2em 0 0.9em; overflow: hidden;}
   .part_image_row{
     img{width: 8em; margin: .6em .2em;height: 4em;}
@@ -185,7 +185,7 @@ a{color:#535353;text-decoration: none;}
     a.link_out{color:#535353;vertical-align: top;  text-decoration: none;}
     a.link_out:before{
       content: "\e600";
-      color:redShade;
+      color:$redShade;
       font-family: icomoon;
       font-size: 1.4em;
       margin: 0.2em .3em 0 0;
@@ -251,14 +251,14 @@ a{color:#535353;text-decoration: none;}
   .contact{
     .tel:before{
       content: "\e600";
-      color:redShade;
+      color:$redShade;
       font-family: icomoon;
       font-size: 1.4em;
       margin: 0.2em .5em 0 0;
     }
     .email:before{
       content: "\e611";
-      color:redShade;
+      color:$redShade;
       font-family: icomoon;
       font-size: 1.3em;
       margin: 0.2em .5em 0 0;
@@ -266,14 +266,14 @@ a{color:#535353;text-decoration: none;}
 
     .hours:before{
       content: "\e60d";
-      color:redShade;
+      color:$redShade;
       font-family: icomoon;
       font-size: 1.3em;
       margin: 0.2em .5em 0 0;
     }
     .facebook:before{
       content: "\e61d";
-      color:redShade;
+      color:$redShade;
       font-family: icomoon;
       font-size: 1.3em;
       margin:0.2em 0.45em 0 0em;
@@ -281,7 +281,7 @@ a{color:#535353;text-decoration: none;}
     .twitter:before{
       content: "\e61c";
       font-size: 1.1em !important;
-      color:redShade;
+      color:$redShade;
       font-family: icomoon;
       margin: 0.2em .5em 0 0;
     }
@@ -305,14 +305,14 @@ a{color:#535353;text-decoration: none;}
       padding:.5em 0 0.9em;
       span {
         em {
-          color: redShade;
+          color: $redShade;
         }
       }
     }
   }
   .biodiesel{
     div{padding: .5em 0 0.9em;}
-    em{color:redShade;}
+    em{color:$redShade;}
     div.para{
 
       span{width:100%;   a{font-size: .99em; font-weight: bold;text-decoration: underline;}
@@ -335,7 +335,7 @@ a{color:#535353;text-decoration: none;}
   display: block;
   overflow: hidden;
   padding: .3em 1em;
-  background: redShade;
+  background: $redShade;
   color: #fff;
   position: relative;
   z-index: 1;
@@ -458,14 +458,14 @@ a{color:#535353;text-decoration: none;}
    -webkit-box-shadow: rgba(0,0,0,0.8) 0 0.2em 0.6em;
   -moz-box-shadow: rgba(0,0,0,0.8) 0 0.2em 0.6em;*/
   border-radius: 0;
-  box-shadow: none;
+/*  box-shadow: none; */
   background-image: none;
-  background-color: transparent;
-  padding: 0px;
+  background-color: $redShade;
+  padding: 5px;
   .x-list .x-list-item.x-list-item-tpl .x-innerhtml {
     padding: 8px 12px;}
 }
-.x-list .x-list-item.x-item-selected .x-dock-horizontal, .x-list .x-list-item.x-item-selected.x-list-item-tpl{background-color: redShade;color:#fff;}
+.x-list .x-list-item.x-item-selected .x-dock-horizontal, .x-list .x-list-item.x-item-selected.x-list-item-tpl{background-color: $redShade;color:#fff;}
 .x-mask{background: rgba(0,0,0,0) center center no-repeat; }
 
 
@@ -473,9 +473,9 @@ a{color:#535353;text-decoration: none;}
 
 
 /* Map styles*/
-.x-list-normal .x-list-item.x-list-item-tpl.x-list-footer-wrap{border-bottom: 2px solid redShade; }
+.x-list-normal .x-list-item.x-list-item-tpl.x-list-footer-wrap{border-bottom: 2px solid $redShade; }
 
-.crossicon{background: redShade;
+.crossicon{background: $redShade;
   background-image: none !important;
   width: 32px !important;
   float: right;
@@ -527,7 +527,7 @@ root {
   font-size: .9em;
 
   .icon-fuel {
-    color: redShade;
+    color: $redShade;
     font-size:1.1em;
   }
   .info {
@@ -566,20 +566,24 @@ root {
   width:1em;
 }
 
+.saveBtnCls{
+  
+}
+
 .infotitle {
   border-radius: 0;
   font-size: 1.2em !important;
   padding: .5em .8em;
   border-bottom: 1px solid #cfcfcf;
   color:#505050;
-  border-top: 1px solid redShade;line-height: 106%;
-  .x-button{color: redShade; background-color: transparent; border: 0;}
+  border-top: 1px solid $redShade;line-height: 106%;
+  .x-button{color: $redShade; background-color: transparent; border: 0;}
   .titletxt{
     width:76%;
     strong{color:#717171; font-size: .9em;}
     strong:first-child{color:#505050; font-size: 1em;}
   strong:nth-child(3){color:#a8a8a8; font-size: .85em;}
-  small{color:redShade; font-size:.8em;}
+  small{color:$redShade; font-size:.8em;}
   }
   .x-button-label, .x-badge, .x-hasbadge .x-badge { font-weight: normal;line-height: 2em;font-size: .6em; }
 
@@ -589,7 +593,7 @@ root {
 .x-panel.x-floating .x-panel-inner, .x-panel.x-floating>.x-body, .x-msgbox .x-panel-inner, .x-msgbox>.x-body, .x-form.x-floating .x-panel-inner, .x-form.x-floating>.x-body{border-radius:0;}
 .detailinfo{ padding: .5em 1em;font-size: .9em;color:#505050;border-bottom: 1px solid #c6c6c6;
   .icon-fuel, .icon-calendar, .icon-card{
-    color:redShade;font-size: 1.3em;
+    color:$redShade;font-size: 1.3em;
     padding-right: .3em;vertical-align: middle;width: 1.5em; display: inline-block; text-align: center;}
   .icon-calendar{font-size: 1.8em;padding-right: 0;
     text-align: left;
@@ -688,8 +692,52 @@ div {
   padding:.5em 0 0.9em;
   span {
     em {
-      color: redShade;
+      color: $redShade;
     }
   }
 }
+}
+
+.x-picker-item  {
+  
+}
+
+.x-component-outer:after{
+      background-color: $redShade !important;
+}
+
+.selectFieldInputCls{
+  border-width: 1.5px;
+  border-color: $redShade !important;
+  border-radius: 45px;
+  border-width: thin;
+}
+
+.backCls, .backCls-inner,  .backCls-outer {
+        background-color: $redShade !important;
+        padding: 0px 5px 0px 5px;
+}
+
+.textCls,  {
+    background-color: #b42933 !important;
+    color: white;
+    font-family: cursive;
+}
+
+.circleBtn{
+    background: url("../images/saveBtn.png") no-repeat;
+        height: 51%;
+}
+
+.circleBaseCls{
+    margin: auto;
+    width: 45%;
+    }
+.x-button, .x-button circleBtn, .circleBtn{
+    border: 2px solid #999;
+    border-radius: 50%;
+    }
+
+.x-button-action{
+      background-color: #f7f7f7 !important;
 }
