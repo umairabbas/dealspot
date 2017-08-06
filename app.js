@@ -22,9 +22,9 @@ Ext.application({
     ],
 
 
-    models : ['Categories', 'UserProfile'],
+    models : ['Categories', 'UserProfile', 'Deals'],
 
-    stores : ['Categories', 'UserProfile'],
+    stores : ['Categories', 'UserProfile', 'Deals'],
 
     controllers: [
         'DealSpot.controller.Main'

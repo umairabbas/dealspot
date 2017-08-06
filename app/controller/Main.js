@@ -55,6 +55,20 @@ Ext.define('DealSpot.controller.Main', {
 			store.sync();
 		}
 
+		var store = Ext.getStore('dealsStore');
+		if(store.getCount()<3){
+		var data = [{"uid": "1", "userId": "1", "dateCreated": "08/6/2017", "datePublish": "08/6/2017", "title": "20% Rabatt Mcdonalds",
+					 "image": "http://2.bp.blogspot.com/-Mbq5kmMtrgI/T44zS6BzQ6I/AAAAAAAAA20/QjajhABxexU/s1600/458827_10151501202440023_142518590022_23600640_1232321177_o.jpg", 
+					 "description": "Promotion period: 18 April – 18 May and while stocks last. Available from 11am – 4am, EVERYDAY!", "contact": "Tel: 089 / 7 85 94 - 413", "lat": "50.7947313", "lon": "6.1019621"},
+					 {"uid": "2", "userId": "2", "dateCreated": "08/3/2017", "datePublish": "08/4/2017", "title": "30% Discount BackWerk",
+					 "image": "http://worldfranchise.eu/sites/default/files/franchises/photos/rcl_backwerk-fassade_02_a.jpg", "description": "Free Coffee in Morning", "contact": "+49 241 94379920",  "lat": "50.7738775", "lon": "6.0853535"},
+					 {"uid": "3", "userId": "3", "dateCreated": "07/22/2017", "datePublish": "07/23/2017", "title": "20% H&M",
+					 "image": "http://www.couponforshopping.com/wp-content/uploads/2014/12/hm-coupon.png", "description": "Sale on Jeans, shirts, ladies shoes, Jackets. Valid only till 2017", "contact": "+49 800 6655900",  "lat": "50.7756467", "lon": "6.0871046"},
+					]
+			store.add(data);
+			store.sync();
+		}
+
 	},
 	onDealsItemChange: function(){
 		console.log('DealSpot.controller.Main.onDealsItemChange();');

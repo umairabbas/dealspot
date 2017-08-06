@@ -1911,8 +1911,10 @@ Ext.ClassManager.addNameAlternateMappings({
   "DealSpot.common.Util": [],
   "DealSpot.controller.Main": [],
   "DealSpot.model.Categories": [],
+  "DealSpot.model.Deals": [],
   "DealSpot.model.UserProfile": [],
   "DealSpot.store.Categories": [],
+  "DealSpot.store.Deals": [],
   "DealSpot.store.UserProfile": [],
   "DealSpot.view.Categories": [],
   "DealSpot.view.Contact": [],
@@ -2549,8 +2551,10 @@ Ext.ClassManager.addNameAliasMappings({
   "DealSpot.common.Util": [],
   "DealSpot.controller.Main": [],
   "DealSpot.model.Categories": [],
+  "DealSpot.model.Deals": [],
   "DealSpot.model.UserProfile": [],
   "DealSpot.store.Categories": [],
+  "DealSpot.store.Deals": [],
   "DealSpot.store.UserProfile": [],
   "DealSpot.view.Categories": [
     "widget.categories"
