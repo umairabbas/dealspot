@@ -46,7 +46,7 @@ Ext.define('DealSpot.model.Deals', {
         ],
         proxy: {
             type: 'localstorage',
-            //id: 'catList',
+            id: 'dealsList',
             //url: 'http://192.168.6.193/api/pacp/getRSSFeeds',
             //reader : {
             //    type : 'json',

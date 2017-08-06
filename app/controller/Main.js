@@ -113,7 +113,7 @@ Ext.define('DealSpot.controller.Main', {
 		}
 
 		var store = Ext.getStore('userProfileStore');
-		var data = [{"uid": "24", "name": data.name, "language": data.language, "country": data.country, "zip": data.zip}];
+		var data = [{"uid": "1", "language": data.language, "country": data.country, "zip": data.zip}];
 			store.add(data);
 			store.sync();
 

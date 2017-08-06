@@ -23,10 +23,6 @@ Ext.define('DealSpot.model.UserProfile', {
                 name: 'internalid',
                 type: 'string'
             },
-            {
-                name: 'name',
-                type: 'string'
-            },
             // {
             //     name: 'last_auth_on',
             //     type: 'date'
@@ -37,10 +33,6 @@ Ext.define('DealSpot.model.UserProfile', {
             },
             {
                 name: 'language',
-                type: 'string'
-            },
-            {
-                name: 'country',
                 type: 'string'
             },
             {

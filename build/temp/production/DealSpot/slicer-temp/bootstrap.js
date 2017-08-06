@@ -1907,7 +1907,6 @@ Ext.Loader.addClassPathMappings({
 });
 
 Ext.ClassManager.addNameAlternateMappings({
-  "DealSpot.common.CountryList": [],
   "DealSpot.common.Util": [],
   "DealSpot.controller.Main": [],
   "DealSpot.model.Categories": [],
@@ -2547,7 +2546,6 @@ Ext.ClassManager.addNameAlternateMappings({
 });
 
 Ext.ClassManager.addNameAliasMappings({
-  "DealSpot.common.CountryList": [],
   "DealSpot.common.Util": [],
   "DealSpot.controller.Main": [],
   "DealSpot.model.Categories": [],

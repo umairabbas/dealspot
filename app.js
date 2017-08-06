@@ -14,11 +14,17 @@ Ext.application({
     name: 'DealSpot',
 
     requires: [
-        'Ext.MessageBox', 'DealSpot.common.Util', 'DealSpot.common.CountryList'
+        'Ext.MessageBox', 'DealSpot.common.Util'
     ],
 
     views: [
-        'Main', 'Deals', 'Settings', 'Contact', 'Categories', 'Nearby', 'Startup'
+        'Main', 
+        'Deals', 
+        'Settings', 
+        'Contact', 
+        'Categories', 
+        'Nearby', 
+        'Startup'
     ],
 
 
@@ -89,7 +95,7 @@ Ext.application({
         //         });
 
         if(DealSpot.common.Util.checkUserState()){
-            // Initialize the main view
+            //Initialize the main view
             Ext.Viewport.add(Ext.create('DealSpot.view.Main'));
         }else{
             // Initialize the login view
