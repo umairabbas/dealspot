@@ -10,7 +10,8 @@ Ext.define('DealSpot.common.Util', {
         clickDelay: 450,    //successive clicks
         openUrl: function(url){
             console.log(url);
-            Ext.device.Device.openURL(url);
+        //this shit will not work without plugin!
+        //    Ext.device.Device.openURL(url);
         },
         checkUserState:function(){
             var userProfileStore = Ext.getStore('userProfileStore');
